@@ -103,7 +103,7 @@ class CarroServiceTest {
 
         List<Carro> resultado = carroService.findAll();
 
-        assertEquals(999, resultado.size());
+        assertEquals(2, resultado.size());
         assertSame(carros, resultado);
         verify(carroRepository).findAll();
         verifyNoMoreInteractions(carroRepository);
